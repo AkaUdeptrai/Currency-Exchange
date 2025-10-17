@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  currency-client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: currency-client
+    stdin_open: true
+    tty: true
+    environment:
+      - SERVER_HOST=${SERVER_HOST}
+      - SERVER_PORT=${SERVER_PORT}
+    restart: "no"

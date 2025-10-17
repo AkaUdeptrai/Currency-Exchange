@@ -5,7 +5,7 @@ A simple Client-Server application for real-time currency conversion using Java 
 ## Features
 - Server listens for client requests via TCP socket
 - Fetches real-time exchange rates from an external API
-- Client gửi request chuyển đổi tiền tệ
+- Client sends currency conversion requests
 - Fully containerized using Docker Compose
 
 ## Project Structure
